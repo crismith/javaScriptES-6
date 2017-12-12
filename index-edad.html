@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Edad</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h2>Cuantos años tienes</h2>
+	<label>Que año es:</label>
+	<br>
+	<input type="text" id="edadactual">
+	<br>
+	<label>En que año naciste</label>
+	<br>
+	<input type="text" id="naciste">
+	<br>
+	<br>
+	<input type="submit" id="boton" value="sumar tu edad" onclick="sumar()">
+	<br>
+
+
+	<script>
+
+		var edad;
+
+		function sumar() {
+			añoA = document.getElementById('edadactual').value;
+			añoN = document.getElementById('naciste').value;
+			edad = añoA - añoN;
+			console.log(edad)
+		}
+			document.write('<h1> Tu edad es '+ edad +' años</h1> ');
+	</script>
+</body>
+</html>
